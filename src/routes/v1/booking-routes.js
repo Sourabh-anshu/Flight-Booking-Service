@@ -8,4 +8,9 @@ router
         BookingController.createBooking
     )
 
+router
+    .post('/payments',
+        BookingController.makePayment
+    )
+
 module.exports = router;
